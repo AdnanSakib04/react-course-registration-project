@@ -15,8 +15,10 @@ function App() {
   return (
     <>
 
+     <div className='bg-[#F3F3F3]'>
+
      
-      <h1 className=' text-center text-3xl font-bold mt-12'>Course Registration</h1>
+      <h1 className=' text-center text-3xl font-bold pt-12'>Course Registration</h1>
       <div className=' max-w-[1400px] mx-auto'>
       <div className='w-3/4'>
       <Cards courses={courses}></Cards>
@@ -29,7 +31,7 @@ function App() {
       </div>
       
       
-      
+      </div>
     </>
   )
 }
