@@ -3,7 +3,6 @@ import Course from "../Course/Course";
 const Courses = ({courses, handleAddCourse}) => {
     return (
         <div>
-            <h1>Course: {courses.length}</h1>
             <div className="grid grid-cols-3 gap-y-5">
 
             
