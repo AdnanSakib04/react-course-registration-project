@@ -1,6 +1,6 @@
 import Course from "../Course/Course";
 
-const Courses = ({courses}) => {
+const Courses = ({courses, handleAddCourse}) => {
     return (
         <div>
             <h1>Course: {courses.length}</h1>
@@ -8,7 +8,7 @@ const Courses = ({courses}) => {
 
             
             {
-                courses.map((course, idx) => <Course key={idx} course={course}></Course>)
+                courses.map((course, idx) => <Course key={idx} course={course} handleAddCourse={handleAddCourse}></Course>)
             }
             </div>
         </div>
