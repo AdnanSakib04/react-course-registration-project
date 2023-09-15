@@ -63,12 +63,12 @@ function App() {
 
      
       <h1 className=' text-center text-3xl font-bold pt-12 mb-8'>Course Registration</h1>
-      <div className='flex max-w-[1400px] mx-auto'>
-      <div className='w-3/4'>
+      <div className='flex flex-col-reverse items-center justify-items-center md:items-start justify-center md:flex-row max-w-[420px] md:max-w-[1400px] mx-auto'>
+      <div className=' lg:w-3/4'>
       <Cards courses={courses} handleAddCourse={handleAddCourse}></Cards>
       </div>
 
-      <div className='w-1/4'>
+      <div className='  lg:w-1/4'>
       <Cart selectedCourse={selectedCourse} totalCost={totalCost} totalCredit={totalCredit} remainingHour={remainingHour}></Cart>
 
 

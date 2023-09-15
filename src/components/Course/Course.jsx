@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-const Course = ({ course,handleAddCourse }) => {
-    const {  image, course_name, credit, price, details } = course;
-    console.log('---', course);
+const Course = ({ course, handleAddCourse }) => {
+    const { image, course_name, credit, price, details } = course;
+    // console.log('---', course);
     return (
-        <div className='w-[312px] h-[420px] bg-white p-4 space-y-2 rounded-lg'>
+        <div className='w-[312px] h-[425px] bg-white p-4 space-y-2 rounded-lg'>
             <img src={image} alt="" />
             <h1 className=' text-lg font-semibold'>{course_name}</h1>
             <p className='text-[#1C1B1B99] h-[120px]'>{details}</p>
@@ -16,7 +16,7 @@ const Course = ({ course,handleAddCourse }) => {
                     <path d="M12 6.042C10.3516 4.56336 8.2144 3.74694 6 3.75C4.948 3.75 3.938 3.93 3 4.262V18.512C3.96362 18.172 4.97816 17.9989 6 18C8.305 18 10.408 18.867 12 20.292M12 6.042C13.6483 4.56328 15.7856 3.74685 18 3.75C19.052 3.75 20.062 3.93 21 4.262V18.512C20.0364 18.172 19.0218 17.9989 18 18C15.7856 17.9969 13.6484 18.8134 12 20.292M12 6.042V20.292" stroke="#1C1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg></span>  <span className='ml-2'>Credit: {credit}hr</span></span>
             </div>
-            <button onClick={()=> handleAddCourse(course)} className=' mt-2 btn rounded-lg text-white w-[280px] h-[40px] bg-[#2F80ED]'>Select</button>
+            <button onClick={() => handleAddCourse(course)} className=' mt-6 btn rounded-lg text-white w-[280px] h-[40px] bg-[#2F80ED]'>Select</button>
 
         </div>
     );
