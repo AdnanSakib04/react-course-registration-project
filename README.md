@@ -1,5 +1,5 @@
 **Q/A 1. Project features are given below:** 
-- **Course Selection and Cart Option:** Users can select any course they like and it will be added to cart by a simple click of a button. If an user selects a course that is already in the cart, then it will show a error toast saying the course is already in the cart.
+- **Course Selection and Cart Option:** Users can select any course they like and it will be added to cart by a simple click of a button. If an user selects a course that is already in the cart, then it will show an error toast saying the course is already in the cart.
 - **Credit Checking:** The application calculates the total credits of the courses added by the user. If the total credit is greater than 20 than user cannot add anymore courses, and still if user wants to add any course, the application will show error toast telling that user has reached the credit limit. 
 - **Remaining Credit Hour Calculation:** A user can add up to 20 credit hours. User will be shown how much credit he has left. For every course added to cart, the application will subtract the total credit hours from the initial remaining credit hours which is 20. This remaining value cannot be below 0 and above 20.
 
