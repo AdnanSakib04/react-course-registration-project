@@ -1,5 +1,6 @@
 
 // eslint-disable-next-line react/prop-types
+
 const Cart = ({selectedCourse}) => {
     return (
         <div className="w-[312px]  bg-white rounded-lg mt-6 p-5 space-y-3">

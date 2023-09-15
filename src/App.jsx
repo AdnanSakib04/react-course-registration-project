@@ -5,6 +5,8 @@ import './App.css'
 import Cards from './components/Courses/Courses'
 import { useState } from 'react';
 import Cart from './components/Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [courses, setCourses] = useState([]);
@@ -21,13 +23,15 @@ function App() {
     const isCourseExist = selectedCourse.find((item) => item.id == course.id);
 
     if (isCourseExist) {
-      return alert("This course is already added to cart");
+      return  toast.error("This course is already added to cart",{
+        position:"top-center"
+      });
     } else {
       setSelectedCourse([...selectedCourse, course]);
     }
   };
 
-  
+
   return (
     <>
      <div className='bg-[#F3F3F3]'>
@@ -45,6 +49,7 @@ function App() {
 
       </div>
       </div>  
+      <ToastContainer />
       </div>
     </>
   )
